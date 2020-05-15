@@ -18,6 +18,7 @@ body{
 
 .contenedor{
   max-width: 1000px; /*Tamaño del contenedor para los espacios */
+  max-width: 95%;/*Esta linea es para dejar un margen en los costados, para que no tome el 100%*/
   margin: 0 auto;
 }
 h1, h2, h3, h4{
@@ -108,9 +109,35 @@ img{
 }
 @media (min-width:768px){
   .texto-header{
-    margin-top: 5rem;
+    margin-top: 15rem;
   }
 }
 .texto-header p{
   font-size: 2.2rem;
+}
+
+/* ***CONTENIDO PRINCPAL**/
+/* *********************/
+/***********************/
+
+.contenido-principal{
+  display: flex;
+  flex-wrap:wrap;
+}
+.blog, .cursos{
+  border: solid red 1px;
+  flex:0 0 100%; /* Las siguientes tres lineas son la expansión de esta
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 100%;/*Tamaño del item respecto el contenedor*/
+}
+.cursos{
+  order:-1; /*Esto es para hacer que tome una posición antes de su lugar*/
+}
+
+.contenido-principal{
+/*  border: solid black 1px;
+}
+.entrada-blog{
+  border: solid yellow 1px;
 }
