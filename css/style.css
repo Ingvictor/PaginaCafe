@@ -29,12 +29,13 @@ h1{
 }
 h2{
   font-size: 4rem;
+  line-height: 1.2;
 }
 h3{
   font-size: 3.2rem;
 }
 h4{
-  font-size: 2.8rem;
+  font-size: 2.4rem;
 }
 img{
   max-width: 100%;
@@ -125,7 +126,6 @@ img{
   flex-wrap:wrap;
 }
 .blog, .cursos{
-  border: solid red 1px;
   flex:0 0 100%; /* Las siguientes tres lineas son la expansión de esta
   flex-grow: 0;
   flex-shrink: 0;
@@ -135,9 +135,55 @@ img{
   order:-1; /*Esto es para hacer que tome una posición antes de su lugar*/
 }
 
-.contenido-principal{
-/*  border: solid black 1px;
+@media (min-width:768px){
+  .contenedor{
+      margin: 0 15rem;
+  }
+  .contenido-principal{
+    justify-content: space-between;
+  }
+  .blog{
+    flex-basis: 66.6%;
+    order: -1;
+  }
+  .cursos{
+    flex-basis: calc(33.3% - 4rem);
+  }
 }
+
+/*********OPCIONAL******/
+/***********************/
+/***********************/
+
 .entrada-blog{
-  border: solid yellow 1px;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.entrada-blog:last-of-type{
+  border: none;
+}
+
+/*******Listas******/
+/***********************/
+/***********************/
+
+.cursos-lista{
+  padding: 0;
+  list-style: none;
+}
+.curso{
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+.curso:last-of-type{
+  border: none;
+}
+.curso p{
+  font-family: 'PT-Sans', sans-serif;
+  font-weight: 700; /*Cambia el grosor de la letra*/
+  font-size: 2rem;
+}
+.curso p span{
+  font-weight: 400;
 }
