@@ -52,6 +52,34 @@ img{
   margin: 0;
 }
 
+/*******Botones******/
+/***********************/
+/***********************/
+
+.btn{ /*Clase para tamaño calular*/
+  display: block;
+  text-align: center;
+  padding: 1rem 3rem;/*Tamaño del botón*/
+  margin: 2rem 0;
+  color:white;
+  text-decoration: none;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;/*Para hacer todo en MAYUSCULAS*/
+  font-size: 1.5rem;
+}
+@media (min-width:768px){ /*Tamaño escritorio*/
+  .btn{
+    display: inline-block;
+  }
+}
+
+.btn-primario{
+  background-color: #000;
+}
+.btn-secundario{
+  background-color: #784d3c;
+}
 /* ***HEADER********/
 /* *********************/
 /***********************/
