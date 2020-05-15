@@ -17,7 +17,6 @@ body{
 /***********************/
 
 .contenedor{
-  border:solid white 1px;
   max-width: 1000px; /*Tamaño del contenedor para los espacios */
   margin: 0 auto;
 }
@@ -67,7 +66,7 @@ img{
   background-repeat: no-repeat; /*Elimina las repetieciones de la imagen*/
   background-position: center center; /*Centra la imagen arriba y abajo*/
   background-size: cover;/*Rellena el fondo por todos lados*/
-  /*height: 60rem; Para resolución muy grande*/
+  height: 60rem; Para resolución muy grande
 }
 .site-header a{
   color: #fff;
